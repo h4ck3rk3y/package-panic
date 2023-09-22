@@ -1,3 +1,5 @@
+data = import_module("github.com/h4ck3rk3y/package-panic/data/main.star")
+
 def run(plan):
-    data = plan.read_file("github.com/h4ck3rk3y/package-panic/data/foo.txt")
-    plan.print(data)
+    data_txt = data.run(plan)
+    plan.print(data_txt)
